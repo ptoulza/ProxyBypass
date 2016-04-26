@@ -1,2 +1,5 @@
-# Proxy-Bypass-Downloader
-A easy way to download files blocked by a proxy using an external relay
+# ProxyBypass
+An easy way to download files blocked by a proxy using an external relay
+
+## What is it ?
+
