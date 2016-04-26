@@ -56,4 +56,12 @@ your_local_linux_user:your_mail@provider:your_smtp_server:port
 ```
 
 ### Custom scripts
-to be continued
+just move download.sh to $HOME and edit to put real wwwroot/domain/email adresses
+
+## Usage
+Just run 
+>bash fetchmail_daemon
+
+or if ssh'd:
+>nohup bash fetchmail_daemon &
+
