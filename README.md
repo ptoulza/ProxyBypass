@@ -15,8 +15,18 @@ A small mail bot will download the file for you and put it on a wwwroot you prov
 - fetchmail
 - procmail
 - ssmtp
-- A mail address that can be accessed by (selfhosted or external) POP3 or IMAP  and a (self hosted or external) SMTP.
+- A mail address that can be accessed by (selfhosted or external) POP3 or IMAP  and a (self hosted or external) SMTP. Gmail / Outlook adresses seem to be ok.
 
 ## How to configure ?
 
 ### Fetchmail
+to be continued
+
+### Procmail
+to be continued
+
+### ssmtp
+to be continued
+
+### Custom scripts
+to be continued
