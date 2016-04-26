@@ -11,8 +11,12 @@ Just put the file to download URL in the subject of a a mail and send it.
 A small mail bot will download the file for you and put it on a wwwroot you provide.
 
 ## What is needed ?
-- Fetchmail
-- Procmail
-- Ssmtp
+- Linux (mine is Raspbian)
+- fetchmail
+- procmail
+- ssmtp
+- A mail address that can be accessed by (selfhosted or external) POP3 or IMAP  and a (self hosted or external) SMTP.
 
-# How to configure ?
+## How to configure ?
+
+### Fetchmail
