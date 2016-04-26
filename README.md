@@ -11,11 +11,11 @@ Just put the file to download URL in the subject of a a mail and send it.
 A small mail bot will download the file for you and put it on a wwwroot you provide.
 
 ## What is needed ?
-- Linux (mine is Raspbian)
+- Linux (mine is Raspbian) machine that can access the file to download
 - fetchmail
 - procmail
 - ssmtp
-- A mail address that can be accessed by (selfhosted or external) POP3 or IMAP  and a (self hosted or external) SMTP. Gmail / Outlook adresses seem to be ok.
+- A mail address that can be accessed by (selfhosted or external) POP3 or IMAP  and a (self hosted or external) SMTP. Gmail / Outlook adresses seem to be ok. It's better if the address is dedicated to download file, because the provided configuration gets all mails from IMAP dans delete them from the imap server.
 
 ## How to configure ?
 
@@ -65,3 +65,6 @@ Just run
 or if ssh'd:
 >nohup bash fetchmail_daemon &
 
+## Responsability
+Running this script implies taking your responsability. Only use dedicated email address and not your personal email.
+I won't be responsible of deleting your whole mail stack.
