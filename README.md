@@ -20,13 +20,40 @@ A small mail bot will download the file for you and put it on a wwwroot you prov
 ## How to configure ?
 
 ### Fetchmail
-to be continued
+Just edit or create $HOME/.fetchmailrc :
+```
+poll your_imap_server protocol imap:
+  user "your_mail@provider" password "your_plaintext_password" mda "/usr/bin/procmail" ssl
+```
 
 ### Procmail
-to be continued
+Just edit or create $HOME/.procmailrc :
+```
+PATH=/bin:/usr/bin
+MAILDIR=$HOME/user
+LOGFILE=$HOME/procmail.log
+
+:0 wif
+| bash $HOME/download.sh
+```
 
 ### ssmtp
-to be continued
+Just edit /etc/ssmtp/ssmtp.conf
+```
+root=your_mail@provider
+mailhub=your_smtp_server:port
+AuthUser=your_mail@provider (or user to authenticate)
+AuthPass=your_plaintext_password
+rewritedomain=your_smtp_server_domain
+UseTLS=YES (better)
+hostname=your_local_machine_name
+FromLineOverride=YES
+```
+
+And also edit /etc/ssmtp/revaliases (to map local accounts to mail)
+```
+your_local_linux_user:your_mail@provider:your_smtp_server:port
+```
 
 ### Custom scripts
 to be continued
